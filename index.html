@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Ada Lovelace — front-end engineer building fast, accessible interfaces."
+    />
+    <title>Ada Lovelace — Front-end Engineer</title>
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" data-progress aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#hero">Ada<span>.</span></a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" data-nav aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+              <path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="currentColor" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="wrap hero-inner">
+          <p class="eyebrow">Front-end engineer · London</p>
+          <h1 id="hero-title">Building fast, accessible interfaces that feel effortless.</h1>
+          <p class="lead">
+            I design and ship production web apps with semantic HTML, resilient CSS and just enough
+            JavaScript. Currently open to freelance work.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <h2 id="about-title">About</h2>
+          <div class="about-grid">
+            <p>
+              <strong>Eight years</strong> spent turning ambiguous briefs into accessible products.
+              I care about Core Web Vitals, keyboard-first flows and design systems that stay
+              consistent as teams grow.
+            </p>
+            <ul class="skills" aria-label="Core skills">
+              <li>Semantic HTML &amp; ARIA</li>
+              <li>Modern CSS (grid, custom properties)</li>
+              <li>TypeScript &amp; React</li>
+              <li>Web performance</li>
+              <li>Design systems</li>
+              <li>WCAG 2.2</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="wrap">
+          <h2 id="projects-title">Selected projects</h2>
+          <ul class="cards">
+            <li class="card">
+              <h3>Atlas Design System</h3>
+              <p>Token-driven component library adopted by 6 product teams. 40KB gzipped, zero runtime deps.</p>
+              <p class="tag-row"><span class="tag">Design systems</span><span class="tag">CSS</span></p>
+            </li>
+            <li class="card">
+              <h3>Signal Dashboards</h3>
+              <p>Realtime analytics UI rendering 60fps charts from a 5,000-event/second stream.</p>
+              <p class="tag-row"><span class="tag">TypeScript</span><span class="tag">Performance</span></p>
+            </li>
+            <li class="card">
+              <h3>Open Budget</h3>
+              <p>Accessible, offline-first budgeting PWA — audited to WCAG 2.2 AA.</p>
+              <p class="tag-row"><span class="tag">PWA</span><span class="tag">A11y</span></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
+          <h2 id="contact-title">Let's work together</h2>
+          <p>Have a project in mind? I usually reply within a day.</p>
+          <a class="btn btn-primary" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© <span data-year>2026</span> Ada Lovelace. Built with plain HTML, CSS and JavaScript.</p>
+        <p><a href="#hero">Back to top ↑</a></p>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
