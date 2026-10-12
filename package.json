@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-website-with-html-css",
+  "version": "1.0.0",
+  "description": "A responsive, accessible personal portfolio in plain HTML, CSS and JavaScript, with a dependency-free preview server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "dev": "node --watch scripts/serve.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
